@@ -1,12 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ 
+  imports = [ 
+      <home-manager/nixos> 
       ./shared/home
       ./hardware-configuration.nix
-      <home-manager/nixos> 
-    ];
+  ];
 
   boot.loader = {
     systemd-boot.enable = true;

@@ -8,8 +8,13 @@
       firefox
       vscode
       ripgrep
+      pfetch
     ];
     home.stateVersion = "22.11";
+
+    programs.bash.shellAliases = import ./aliases {
+      inherit pkgs;
+    };
 
     programs.git = {
       enable = true;
