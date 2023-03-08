@@ -11,9 +11,10 @@
       pfetch
     ];
     home.stateVersion = "22.11";
-
-    programs.bash.shellAliases = import ./aliases {
-      inherit pkgs;
+ 
+    programs.bash = {
+      enable = true;
+      shellAliases = import ./aliases { inherit pkgs; };
     };
 
     programs.git = {
