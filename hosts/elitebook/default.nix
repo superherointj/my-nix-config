@@ -3,7 +3,7 @@
 {
   imports = [ 
       <home-manager/nixos> 
-      ./shared/home
+      ../../shared/home
       ./hardware-configuration.nix
   ];
 
@@ -14,7 +14,7 @@
   };
 
   networking = {
-    hostName = "nixos";
+    hostName = "elitebook";
     networkmanager.enable = true;
   };
 

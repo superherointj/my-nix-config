@@ -1,5 +1,3 @@
-{pkgs}:
-
 {
     ga = "git add";
     gs = "git status";

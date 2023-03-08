@@ -14,7 +14,7 @@
  
     programs.bash = {
       enable = true;
-      shellAliases = import ./aliases { inherit pkgs; };
+      shellAliases = import ./aliases;
     };
 
     programs.git = {
