@@ -1,6 +1,7 @@
 { pkgs, config, ... }:
 
 {
+
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.users.xz = { pkgs, ...}: {
@@ -22,6 +23,6 @@
       userName = "xsamxz";
       userEmail = "samuelwww2000@gmail.com";
     };
-
+      
   };
 }
