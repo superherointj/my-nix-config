@@ -37,6 +37,9 @@
     };
   };
   
+  nix.package = pkgs.nixFlakes;
+  nix.extraOptions = "experimental-features = nix-command flakes";
+
   sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -50,9 +53,10 @@
       desktopManager.gnome.enable = true;
     };
 
-    printing.enable = true;
+  printing.enable = true;
+  printing.drivers = with pkgs; [ gutenprint hplip splix ];
 
-    pipewire = {
+  pipewire = {
       enable = true;
       alsa.enable = true;
       alsa.support32Bit = true;
