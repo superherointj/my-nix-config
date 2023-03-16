@@ -13,13 +13,7 @@
       modules = [
         (./. + "/hosts/elitebook/default.nix")
         home-manager.nixosModule.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.xz = import ./shared/home/default.nix
-        }
       ];
-
     };
   };
 }

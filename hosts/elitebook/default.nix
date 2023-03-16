@@ -1,8 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ 
-      <home-manager/nixos> 
+  imports = [  
       ../../shared/home
       ./hardware-configuration.nix
   ];
