@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
+    home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
@@ -12,7 +12,7 @@
       system = "x86_64-linux";
       modules = [
         (./. + "/hosts/elitebook/default.nix")
-        home-manager.nixosModule.home-manager
+        home-manager.nixosModules.home-manager
       ];
     };
   };
