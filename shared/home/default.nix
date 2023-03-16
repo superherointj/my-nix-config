@@ -2,6 +2,16 @@
 
 {
 
+     #root
+  users.users.root = {
+    isSystemUser = true;
+    home = "/root";
+    uid = 0;
+    group = "root";
+    shell = pkgs.bash;
+    packages = [ pkgs.git ];
+  };
+
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.users.xz = { pkgs, ...}: {
@@ -23,6 +33,6 @@
       userName = "xsamxz";
       userEmail = "samuelwww2000@gmail.com";
     };
-      
+
   };
 }
