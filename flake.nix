@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nixvim.url = github:pta2002/nixvim;
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

@@ -33,6 +33,5 @@
       userName = "xsamxz";
       userEmail = "samuelwww2000@gmail.com";
     };
-
   };
 }
